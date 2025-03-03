@@ -1,0 +1,29 @@
+use ("utt_odma_store")
+
+db.products.drop() //Elimina la colección "products" si existe
+
+db.products.insertMany([
+    {
+        _id: 1,
+        name: "Product 1",
+        price: 1005
+    },
+    {
+        _id: 2,
+        name: "Product 2",
+        price: 1228
+    },
+    {
+        _id: 1,
+        name: "Product 3",
+        price: 1038
+    },
+    {
+        _id: 3,
+        name: "Product 3",
+        price: 1038
+    },
+    { ordered: false }
+])
+
+db.products.find()

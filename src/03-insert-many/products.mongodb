@@ -6,24 +6,28 @@ db.products.insertMany([
     {
         _id: 1,
         name: "Product 1",
-        price: 1005
+        price: 100
     },
     {
         _id: 2,
         name: "Product 2",
-        price: 1228
-    },
-    {
-        _id: 1,
-        name: "Product 3",
-        price: 1038
+        price: 120
     },
     {
         _id: 3,
         name: "Product 3",
-        price: 1038
+        price: 240
     },
-    { ordered: false }
+    {
+        _id: 4,
+        name: "Product 4",
+        price: 360
+    },
+    {
+        name: "Pants Nike",
+        price: 2600,
+        tags: ['S', 'M', 'L', 'XL']
+    }
 ])
 
 db.products.find()

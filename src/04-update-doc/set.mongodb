@@ -1,0 +1,25 @@
+use ("utt_odma_store")
+
+//db.products.updateOne(
+//    //Query id
+//    { _id: 2 },
+//    //Change => Operador de actualización
+//    {
+//        $set: {
+//            name: 'Change name'
+//        }
+//    }
+//)
+
+db.products.updateOne(
+    //Query id
+    { _id: 2 },
+    //Change => Operador de actualización
+    {
+        $set: {
+            name: 'T-shirt',
+            price: 890,
+            tags: ['S', 'M', 'L', 'XL']
+        }
+    }
+)

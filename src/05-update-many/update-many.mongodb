@@ -1,0 +1,15 @@
+use("sample_training")
+
+/*db.zips.updateMany(
+    //Query
+    { city: "CLEVELAND" },
+    //Update -Operador
+ */
+
+//$rename
+db.zips.updateMany(
+    //Query
+    { city: "CLEVELAND" },
+    //Update -Operador
+    { $rename: { myAttr: "my_data" } }
+);

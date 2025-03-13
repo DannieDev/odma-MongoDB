@@ -1,0 +1,15 @@
+use("sample_training")
+
+/*db.zips.updateMany(
+    //Query
+    { city: "CLEVELAND" },
+    //Update -Operador
+    { $set: { myAttr: "Hola" } }
+)*/
+
+db.zips.updateMany(
+    //Query
+    { city: "CLEVELAND" },
+    //Update -Operador
+    { $unset: { my_data: "" } }
+)

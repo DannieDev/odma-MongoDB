@@ -1,0 +1,4 @@
+use("utt_odma_store")
+
+
+db.inventory.find()

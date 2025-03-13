@@ -1,0 +1,35 @@
+//Operadores
+
+//$nombre -> es un Operador
+
+$inc           //Incrementa el valor de un atributo numerico en una cantidad especifica.
+$set           //Asigna un valor especifico a un atributo.
+$mul           //Multiplica el valor de un atributo numerico por un factor especifico.
+$rename        //Cambia el nombre de un atributo.
+$unset         //Elimina un atributo de un documento.
+$min           //Actualiza el valor de un atributo con un valor minimo especificado, solo si el valor actual es mayor al valor especificado.
+$max           //Actualiza el valor de un atributo con el valor maximo especificado, solo si el valor actual es menor que el valor especificado.
+$currentDate   //Establece el valor de un atributo como la fecha y hora actual.
+$addToSet      //Añade un valor a un atributo de tipo conjunto (array), solo si el valor no existe en el conjunto.
+$pop           //Elimina el primer o ultimo elemento de un atributo array. 
+$pull          //Elimina un valor especifico de un atributo tipo array.
+$push          //Añade un valor a un atributo de tipo conjunto array.
+$pushAll       //Elimina varios valores especificos de un array.
+
+
+Métodos
+
+//mongod --version
+//mongo --version
+db.help()
+db.stats()  //Detalles de la base de datos junto con sus colecciones relacionadas
+//show dbs  //Muestra las bases de datos (nombres y tamaño(gb))
+db.dropDatabase()
+db.createCollection("nameCollection")
+db.nameCollection.drop()
+insert()
+/*ó*/ 
+insertOne()
+find() 
+
+//Array Update
